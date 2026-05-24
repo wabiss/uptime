@@ -65,6 +65,106 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
+    {
+      id: 'joey_site', // ID 保持唯一
+      name: 'joey Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://joey.525542.xyz/',
+      tooltip: 'joey 监控',
+      statusPageLink: 'https://joey.525542.xyz/',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
+    {
+      id: 'eo_site', // ID 保持唯一
+      name: 'eo Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://eo.525542.xyz/',
+      tooltip: 'eo 监控',
+      statusPageLink: 'https://eo.525542.xyz/',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
+    {
+      id: 'bpb_site', // ID 保持唯一
+      name: 'bpb Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://bp.tgwy.eu.org/panel',
+      tooltip: 'bpb 监控',
+      statusPageLink: 'https://bp.tgwy.eu.org/panel',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
+    {
+      id: 'edg_site', // ID 保持唯一
+      name: 'edg Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://edg.tgwy.eu.org/admin',
+      tooltip: 'edg 监控',
+      statusPageLink: 'https://edg.tgwy.eu.org/admin',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
+    {
+      id: '提醒_site', // ID 保持唯一
+      name: '提醒 Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://dlx.hidns.cc',
+      tooltip: '提醒 监控',
+      statusPageLink: 'https://dlx.hidns.cc',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
+    {
+      id: 'snp检测_site', // ID 保持唯一
+      name: 'snp检测 Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://snp.tgwy.eu.org',
+      tooltip: 'snp检测 监控',
+      statusPageLink: 'https://snp.tgwy.eu.org',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
+    {
+      id: '节点转换_site', // ID 保持唯一
+      name: '节点转换 Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://sub.525542.xyz',
+      tooltip: '节点转换 监控',
+      statusPageLink: 'https://sub.525542.xyz',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
+    {
+      id: '优选_site', // ID 保持唯一
+      name: '优选 Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://ip.dln.de5.net',
+      tooltip: '优选 监控',
+      statusPageLink: 'https://ip.dln.de5.net',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
+    {
+      id: 'worker请求数_site', // ID 保持唯一
+      name: 'worker请求数 Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://cfwp.dlx.us.ci',
+      tooltip: 'worker请求数 监控',
+      statusPageLink: 'https://cfwp.dlx.us.ci',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
+    {
+      id: '优选生成器_site', // ID 保持唯一
+      name: '优选生成器 Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://sub.dlx.us.ci',
+      tooltip: '优选生成器 监控',
+      statusPageLink: 'https://sub.dlx.us.ci',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
