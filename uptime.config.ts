@@ -60,7 +60,6 @@ const workerConfig: WorkerConfig = {
       name: 'TTLive Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://lh.ttlive17.dns-dynamic.net/',
-      group: '节点', // 这里设置组名
       tooltip: 'TTLive 监控',
       statusPageLink: 'https://lh.ttlive17.dns-dynamic.net/',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -71,7 +70,6 @@ const workerConfig: WorkerConfig = {
       name: 'joey Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://joey.525542.xyz/',
-      group: '节点', // 这里设置组名
       tooltip: 'joey 监控',
       statusPageLink: 'https://joey.525542.xyz/',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -82,7 +80,6 @@ const workerConfig: WorkerConfig = {
       name: 'eo Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://eo.525542.xyz/',
-      group: '节点', // 这里设置组名
       tooltip: 'eo 监控',
       statusPageLink: 'https://eo.525542.xyz/',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -93,7 +90,6 @@ const workerConfig: WorkerConfig = {
       name: 'bpb Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://bp.tgwy.eu.org/panel',
-      group: '节点', // 这里设置组名
       tooltip: 'bpb 监控',
       statusPageLink: 'https://bp.tgwy.eu.org/panel',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -104,7 +100,6 @@ const workerConfig: WorkerConfig = {
       name: 'edg Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://edg.tgwy.eu.org/admin',
-      group: '节点', // 这里设置组名
       tooltip: 'edg 监控',
       statusPageLink: 'https://edg.tgwy.eu.org/admin',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -115,7 +110,6 @@ const workerConfig: WorkerConfig = {
       name: '提醒 Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://dlx.hidns.cc',
-      group: '其他', // 这里设置组名
       tooltip: '提醒 监控',
       statusPageLink: 'https://dlx.hidns.cc',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -126,7 +120,6 @@ const workerConfig: WorkerConfig = {
       name: 'snp检测 Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://snp.tgwy.eu.org',
-      group: '其他', // 这里设置组名
       tooltip: 'snp检测 监控',
       statusPageLink: 'https://snp.tgwy.eu.org',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -137,7 +130,6 @@ const workerConfig: WorkerConfig = {
       name: '节点转换 Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://sub.525542.xyz',
-      group: '其他', // 这里设置组名
       tooltip: '节点转换 监控',
       statusPageLink: 'https://sub.525542.xyz',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -148,7 +140,6 @@ const workerConfig: WorkerConfig = {
       name: '优选ip Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://ip.dln.de5.net',
-      group: '其他', // 这里设置组名
       tooltip: '优选ip 监控',
       statusPageLink: 'https://ip.dln.de5.net',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -159,7 +150,6 @@ const workerConfig: WorkerConfig = {
       name: 'worker请求数 Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://cfwp.dlx.us.ci',
-      group: '其他', // 这里设置组名
       tooltip: 'worker请求数 监控',
       statusPageLink: 'https://cfwp.dlx.us.ci',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -170,7 +160,6 @@ const workerConfig: WorkerConfig = {
       name: '优选生成器 Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://sub.dlx.us.ci',
-      group: '其他', // 这里设置组名
       tooltip: '优选生成器 监控',
       statusPageLink: 'https://sub.dlx.us.ci',
       expectedCodes: [200], // 只有返回 200 才算正常
