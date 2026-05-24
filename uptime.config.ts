@@ -59,9 +59,9 @@ const workerConfig: WorkerConfig = {
       id: 'ttlive_site', // ID 保持唯一
       name: 'TTLive Monitor', // 状态页面上显示的名称
       method: 'GET',
-      target: 'https://gg.ttlive17.dns-dynamic.net/',
+      target: 'https://lh.ttlive17.dns-dynamic.net/',
       tooltip: 'TTLive 监控',
-      statusPageLink: 'https://gg.ttlive17.dns-dynamic.net/',
+      statusPageLink: 'https://lh.ttlive17.dns-dynamic.net/',
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
