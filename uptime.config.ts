@@ -9,8 +9,6 @@ const pageConfig: PageConfig = {
   // Title for your status page
   title: "石头的状态页面",
   // Links shown at the header of your status page, could set `highlight` to `true`
-  // 添加密码设置
-  password: 'dl592675334', // 将此处修改为你想要设置的密码
   links: [
     { link: 'https://github.com/lyc8503', label: 'GitHub' },
     { link: 'https://blog.lyc8503.net/', label: 'Blog' },
