@@ -56,12 +56,12 @@ const workerConfig: WorkerConfig = {
       // checkProxyFallback: true,
     },
     {
-      id: 'ttlive_site', // ID 保持唯一
-      name: 'TTLive Monitor', // 状态页面上显示的名称
+      id: 'graintcp_site', // ID 保持唯一
+      name: 'graintcp Monitor', // 状态页面上显示的名称
       method: 'GET',
-      target: 'https://lh.ttlive17.dns-dynamic.net/',
-      tooltip: 'TTLive 监控',
-      statusPageLink: 'https://lh.ttlive17.dns-dynamic.net/',
+      target: 'https://gp.ttlive17.dns-dynamic.net/',
+      tooltip: 'graintcp 监控',
+      statusPageLink: 'https://gp.ttlive17.dns-dynamic.net/',
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
