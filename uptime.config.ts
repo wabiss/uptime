@@ -59,9 +59,9 @@ const workerConfig: WorkerConfig = {
       id: 'graintcp_site', // ID 保持唯一
       name: 'graintcp Monitor', // 状态页面上显示的名称
       method: 'GET',
-      target: 'https://gp.ttlive17.dns-dynamic.net/',
+      target: 'https://gpt.ttlive17.dns-dynamic.net/',
       tooltip: 'graintcp 监控',
-      statusPageLink: 'https://gp.ttlive17.dns-dynamic.net/',
+      statusPageLink: 'https://gpt.ttlive17.dns-dynamic.net/',
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
