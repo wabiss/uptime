@@ -167,6 +167,16 @@ const workerConfig: WorkerConfig = {
     },
     // Example TCP Monitor
     {
+      id: 'dcdeploy_tcp_monitor',
+      name: 'DCDeploy TCP 监控',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: 'ginelle-achh3q1y7f.dcdeploy.cloud:443',
+      tooltip: 'DCDeploy 端口监控',
+      timeout: 15000,
+    },
+    {
       id: 'test_tcp_monitor',
       name: 'Example TCP Monitor',
       // `method` should be `TCP_PING` for tcp monitors
