@@ -76,16 +76,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'gpworker_site', // ID 保持唯一
-      name: 'gpworker Monitor', // 状态页面上显示的名称
-      method: 'GET',
-      target: 'https://gp.dlq.us.ci/',
-      tooltip: 'gpworker 监控',
-      statusPageLink: 'https://gp.dlq.us.ci/',
-      expectedCodes: [200], // 只有返回 200 才算正常
-      timeout: 10000,
-    },
-    {
       id: 'edg_site', // ID 保持唯一
       name: 'edg Monitor', // 状态页面上显示的名称
       method: 'GET',
