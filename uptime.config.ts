@@ -145,6 +145,36 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
+    {
+      id: 'wispbyte_web',
+      name: 'Wispbyte 容器保活', // 在状态页面上显示的名称
+      method: 'GET',
+      target: 'https://wabiss.wisp.uno', // 您的 Wispbyte 分配域名
+      tooltip: '用于定时请求，防止 Wispbyte 容器休眠',
+      statusPageLink: 'https://wabiss.wisp.uno',
+      expectedCodes: [200], // Wispbyte 的 Express 正常返回 200
+      timeout: 10000,
+    },
+    {
+      id: 'DCPargo',
+      name: 'Argo 节点网络', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://dcp.tgwy.eu.org', // 您的 Argo 隧道域名
+      tooltip: '监控实际代理隧道是否在线',
+      statusPageLink: 'https://dcp.tgwy.eu.org',
+      expectedCodes: [200], // 正常在线时返回 200
+      timeout: 10000,
+    },
+    {
+      id: 'testargo',
+      name: 'Argo 节点网络', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://test.tgwy.eu.org', // 您的 Argo 隧道域名
+      tooltip: '监控实际代理隧道是否在线',
+      statusPageLink: 'https://test.tgwy.eu.org',
+      expectedCodes: [200], // 正常在线时返回 200
+      timeout: 10000,
+    },
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
