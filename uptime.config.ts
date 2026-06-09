@@ -156,11 +156,11 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'dcpdeploy_site', // ID 保持唯一
-      name: 'dcpdeploy Monitor', // 状态页面上显示的名称
+      id: 'dcdeploy_site', // ID 保持唯一
+      name: 'dcdeploy Monitor', // 状态页面上显示的名称
       method: 'GET',
       target: 'https://dacy-sls9vdzl5k.dcdeploy.cloud/',
-      tooltip: 'dcpdeploy 监控',
+      tooltip: 'dcdeploy 监控',
       statusPageLink: 'https://dacy-sls9vdzl5k.dcdeploy.cloud/',
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
