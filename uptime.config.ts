@@ -175,16 +175,6 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
-    {
-      id: 'wasmer_site', // ID 保持唯一
-      name: 'wasmer Monitor', // 状态页面上显示的名称
-      method: 'GET',
-      target: 'https://wabiss.wasmer.app/',
-      tooltip: 'wasmer 监控',
-      statusPageLink: 'https://wabiss.wasmer.app/',
-      expectedCodes: [200], // 只有返回 200 才算正常
-      timeout: 10000,
-    },
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
