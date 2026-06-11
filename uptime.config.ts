@@ -169,9 +169,9 @@ const workerConfig: WorkerConfig = {
       id: 'northflank_site', // ID 保持唯一
       name: 'northflank Monitor', // 状态页面上显示的名称
       method: 'GET',
-      target: 'https://p01--wabiss--tbvxzcz6f2n4.code.run',
+      target: 'https://p01--dlargo--tbvxzcz6f2n4.code.run/wabiss',
       tooltip: 'northflank 监控',
-      statusPageLink: 'https://p01--wabiss--tbvxzcz6f2n4.code.run',
+      statusPageLink: '',
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
