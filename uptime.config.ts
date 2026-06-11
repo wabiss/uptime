@@ -146,16 +146,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'wispbyte_web',
-      name: 'Wispbyte 容器保活', // 在状态页面上显示的名称
-      method: 'GET',
-      target: 'https://wabiss.wisp.uno', // 您的 Wispbyte 分配域名
-      tooltip: '用于定时请求，防止 Wispbyte 容器休眠',
-      statusPageLink: 'https://wabiss.wisp.uno',
-      expectedCodes: [200], // Wispbyte 的 Express 正常返回 200
-      timeout: 10000,
-    },
-    {
       id: 'dcdeploy_site', // ID 保持唯一
       name: 'dcdeploy Monitor', // 状态页面上显示的名称
       method: 'GET',
