@@ -66,6 +66,16 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
+      id: '哪吒V1_site', // ID 保持唯一
+      name: '哪吒V1 Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://nz.tgwy.eu.org/',
+      tooltip: '哪吒V1 监控',
+      statusPageLink: '',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
+    {
       id: 'joey_site', // ID 保持唯一
       name: 'joey Monitor', // 状态页面上显示的名称
       method: 'GET',
