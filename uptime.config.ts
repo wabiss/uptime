@@ -185,16 +185,6 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
-    {
-      id: 'streamlit_keepalive', // 保持唯一
-      name: 'Streamlit App Monitor', // 状态页面上显示的名称
-      method: 'GET',
-      target: 'https://dlxxn66.streamlit.app/_stcore/health', 
-      tooltip: 'Streamlit 容器保活监控',
-      statusPageLink: '',
-      expectedCodes: [200], // 只要返回 200 即代表访问正常
-      timeout: 10000,
-    },
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
