@@ -159,7 +159,7 @@ const workerConfig: WorkerConfig = {
       id: 'wispbyte_site', // ID 保持唯一
       name: 'wispbyte Monitor', // 状态页面上显示的名称
       method: 'GET',
-      target: 'https://wabiss.wisp.uno/wabiss',
+      target: 'https://wabiss.wisp.uno/',
       tooltip: 'wispbyte 监控',
       statusPageLink: '',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -179,7 +179,7 @@ const workerConfig: WorkerConfig = {
       id: 'northflank_site', // ID 保持唯一
       name: 'northflank Monitor', // 状态页面上显示的名称
       method: 'GET',
-      target: 'https://p01--dlargo--tbvxzcz6f2n4.code.run/wabiss',
+      target: 'https://p01--dlargo--tbvxzcz6f2n4.code.run/',
       tooltip: 'northflank 监控',
       statusPageLink: '',
       expectedCodes: [200], // 只有返回 200 才算正常
@@ -189,7 +189,7 @@ const workerConfig: WorkerConfig = {
       id: 'streamlit_keepalive', // 保持唯一
       name: 'Streamlit App Monitor', // 状态页面上显示的名称
       method: 'GET',
-      target: 'https://dlxxn66.streamlit.app/', 
+      target: 'https://dlxxn66.streamlit.app/_stcore/health', 
       tooltip: 'Streamlit 容器保活监控',
       statusPageLink: '',
       expectedCodes: [200], // 只要返回 200 即代表访问正常
