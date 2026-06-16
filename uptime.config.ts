@@ -185,6 +185,15 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
+    {
+      id: 'choreo_node_site', // ID 保持唯一
+      name: 'Choreo Node Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://c7151672-1c60-4c13-a959-1bdd9731fc36.e1-us-east-azure.choreoapps.dev/', 
+      statusPageLink: '',
+      expectedCodes: [200], // 只有返回 200 才算正常（你刚才成功部署了环保网页，返回的就是 200）
+      timeout: 10000,
+    },
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
