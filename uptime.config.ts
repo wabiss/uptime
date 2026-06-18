@@ -156,16 +156,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'wispbyte_site', // ID 保持唯一
-      name: 'wispbyte Monitor', // 状态页面上显示的名称
-      method: 'GET',
-      target: 'https://wabiss.wisp.uno/',
-      tooltip: 'wispbyte 监控',
-      statusPageLink: '',
-      expectedCodes: [200], // 只有返回 200 才算正常
-      timeout: 10000,
-    },
-    {
       id: 'dcdeploy_site', // ID 保持唯一
       name: 'dcdeploy Monitor', // 状态页面上显示的名称
       method: 'GET',
