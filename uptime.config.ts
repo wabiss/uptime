@@ -175,6 +175,16 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
+    {
+      id: 'netrun_site', // ID 保持唯一
+      name: 'netrun Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://wabiss.de1.netrun.io',
+      tooltip: 'netrun 监控',
+      statusPageLink: 'https://wabiss.de1.netrun.io',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
