@@ -185,6 +185,16 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
+    {
+      id: 'runxbuild_site', // ID 保持唯一
+      name: 'runxbuild Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://runx-b62298b43.onrunxbuild.com/',
+      tooltip: 'runxbuild 监控',
+      statusPageLink: 'https://runx-b62298b43.onrunxbuild.com/',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
