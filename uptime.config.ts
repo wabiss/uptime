@@ -206,6 +206,16 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
+      id: 'deployhatch_site', // ID 保持唯一
+      name: 'deployhatch Monitor', // 状态页面上显示的名称
+      method: 'GET',
+      target: 'https://0500b4bd-0d0f-4686-961c-6028c2342d3c.apps.deployhatch.com/',
+      tooltip: 'deployhatch 监控',
+      statusPageLink: 'https://0500b4bd-0d0f-4686-961c-6028c2342d3c.apps.deployhatch.com/',
+      expectedCodes: [200], // 只有返回 200 才算正常
+      timeout: 10000,
+    },
+    {
       id: 'dada-tuda_site', // ID 保持唯一
       name: 'dada-tuda Monitor', // 状态页面上显示的名称
       method: 'GET',
