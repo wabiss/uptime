@@ -196,16 +196,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'pandastack_site', // ID 保持唯一
-      name: 'pandastack Monitor', // 状态页面上显示的名称
-      method: 'GET',
-      target: 'https://9a10c2b0-dc8e-4729-a0c8-6a270d34f8f1.pandastack.ai/',
-      tooltip: 'pandastack 监控',
-      statusPageLink: 'https://9a10c2b0-dc8e-4729-a0c8-6a270d34f8f1.pandastack.ai/',
-      expectedCodes: [200], // 只有返回 200 才算正常
-      timeout: 10000,
-    },
-    {
       id: 'deployhatch_site', // ID 保持唯一
       name: 'deployhatch Monitor', // 状态页面上显示的名称
       method: 'GET',
