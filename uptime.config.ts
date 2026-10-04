@@ -156,16 +156,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'dcdeploy_site', // ID 保持唯一
-      name: 'dcdeploy Monitor', // 状态页面上显示的名称
-      method: 'GET',
-      target: 'https://dacy-sls9vdzl5k.dcdeploy.cloud/',
-      tooltip: 'dcdeploy 监控',
-      statusPageLink: 'https://dacy-sls9vdzl5k.dcdeploy.cloud/',
-      expectedCodes: [200], // 只有返回 200 才算正常
-      timeout: 10000,
-    },
-    {
       id: 'northflank_site', // ID 保持唯一
       name: 'northflank Monitor', // 状态页面上显示的名称
       method: 'GET',
