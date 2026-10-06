@@ -189,9 +189,9 @@ const workerConfig: WorkerConfig = {
       id: 'dada-tuda_site', // ID 保持唯一
       name: 'dada-tuda Monitor', // 状态页面上显示的名称
       method: 'GET',
-      target: 'https://dada-tuda-dcdebe.dada-tuda.ru/',
+      target: 'https://dlxx-e25194.dada-tuda.ru',
       tooltip: 'dada-tuda 监控',
-      statusPageLink: 'https://dada-tuda-dcdebe.dada-tuda.ru/',
+      statusPageLink: 'https://dlxx-e25194.dada-tuda.ru',
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
