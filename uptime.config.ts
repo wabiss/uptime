@@ -185,7 +185,6 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200], // 只有返回 200 才算正常
       timeout: 10000,
     },
-    
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
